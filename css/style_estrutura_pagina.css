@@ -1,0 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* define os elementos da pagina
+*/
+
+*{
+    margin: opx;
+    padding: opx;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+/* Criando variaveis*/
+:root{
+    --cor01: #c6bf07;
+    --cor02: #ff0000;
+    --cor03: #000000;
+    --branca: #ffff;
+
+}
