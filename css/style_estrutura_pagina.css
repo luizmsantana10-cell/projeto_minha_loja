@@ -14,9 +14,34 @@
 
 /* Criando variaveis*/
 :root{
-    --cor01: #c6bf07;
+    --cor01: #fff708;
     --cor02: #ff0000;
-    --cor03: #000000;
+    --cor03: #ff8800;
     --branca: #ffff;
 
+}
+/*Formatando cabeçalho*/
+#geral{
+    margin: 20px;
+}
+
+/*FORMATANDO O CABEÇALHO*/
+#cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    height: 60px; 
+}
+
+/*CONFIGURANDO MENU NA HORIZONTAL*/
+
+#menu ul{
+    display: flex;
+    gap: 0px;
+    list-style: none;
+}
+#menu ul img{
+    width: 25px;
+    height: 25px;
 }
