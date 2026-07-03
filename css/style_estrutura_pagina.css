@@ -1,25 +1,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-/* define os elementos da pagina
-*/
+/* define os elementos da pagina */
 
 *{
-    margin: opx;
-    padding: opx;
+    background-color: #121212;
+    color: #FFD400;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: roboto;
 }
 
 /* Criando variaveis*/
 :root{
-    --cor01: #fff708;
-    --cor02: #ff0000;
-    --cor03: #ff8800;
-    --branca: #ffff;
-
+    --cor01: #121212;
+    --cor02: #FFD400;
+    --cor03: #FF7A00;
+    --cor04: #E53935;
+    --branca: #F5F5F5;
 }
+
 /*Formatando cabeçalho*/
 #geral{
     margin: 20px;
@@ -31,7 +32,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
-    height: 60px; 
+    height: 100px;
 }
 
 /*CONFIGURANDO MENU NA HORIZONTAL*/
@@ -41,7 +42,70 @@
     gap: 25px;
     list-style: none;
 }
+
 #menu ul img{
     width: 50px;
     height: 50px;
 }
+
+/*SECTION PESQUISA*/
+#pesquisa{
+    height: 200px;
+    background-color: var(--cor03);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pesquisa input{
+    width: 650px;
+    height: 80px;
+    background-color: var(--branca);
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+#pesquisa input::placeholder{
+    font-size: 1.3em;
+    font-style: italic;
+    color: var(--cor03);
+}
+
+/*Cards*/
+#card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+}
+
+.card{
+    width: 250px;
+    min-height: 450px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid var(--cor02);
+    border-radius: 50px;
+}
+
+.card img{
+    width: 150px;
+    height: 200px;
+}
+.card button{
+    width: 200px;
+    height: 40px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--cor02);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--cor01);
+    font-weight: bold;
+    cursor: pointer;
+}
+
