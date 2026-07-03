@@ -107,8 +107,7 @@
 }
 .card:hover{
     transform: translateY(-10px);
-    color: var(--cor0);
-   
+
     cursor: pointer;
 }
 
