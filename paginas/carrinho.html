@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EletroLouco - Carrinho de Compras</title>
+    <link rel="stylesheet" href="../css/style_carrinho.css">
+    <link rel="shortcut icon" href="/imagens/icones/EletroLouco.png" type="image/x-icon">
+</head>
+<body>
+    <main id="geral">
+
+        <!-- CABEÇALHO -->
+        <header id="cabecalho">
+            <div id="logo">
+                <a href="../index.html" style="color: inherit;">EletroLouco</a>
+            </div>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+
+                    <li><a href="sobre.html">Sobre</a></li>
+
+                    <li><a href="login.html">Login</a></li>
+
+                    <li><a href="carrinho.html"><img src="../imagens/icones/carrinho.png" alt="Carrinho"></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- FAIXA DE TÍTULO -->
+        <section id="faixa-titulo">
+            <h1>Carrinho de Compras</h1>
+        </section>
+
+        <!-- CONTEÚDO DO CARRINHO -->
+        <section id="conteudo-carrinho">
+
+            <!-- LISTA DE PRODUTOS -->
+            <div id="lista-produtos">
+
+                <div class="item-produto">
+                    <img src="../imagens/amperimetro.png" alt="Amperímetro tipo 1">
+                    <div class="item-info">
+                        <h3>Amperímetro tipo 1</h3>
+                        <p class="item-preco-unitario">R$ <span>100,00</span> / un</p>
+                    </div>
+                    <div class="item-quantidade">
+                        <button class="btn-qtd" type="button">-</button>
+                        <input type="text" value="2" readonly>
+                        <button class="btn-qtd" type="button">+</button>
+                    </div>
+                    <div class="item-subtotal">R$ 200,00</div>
+                    <button class="btn-remover" type="button" title="Remover item">✕</button>
+                </div>
+
+                <div class="item-produto">
+                    <img src="../imagens/voltimetro2.png" alt="Voltímetro tipo 2">
+                    <div class="item-info">
+                        <h3>Voltímetro tipo 2</h3>
+                        <p class="item-preco-unitario">R$ <span>150,00</span> / un</p>
+                    </div>
+                    <div class="item-quantidade">
+                        <button class="btn-qtd" type="button">-</button>
+                        <input type="text" value="1" readonly>
+                        <button class="btn-qtd" type="button">+</button>
+                    </div>
+                    <div class="item-subtotal">R$ 150,00</div>
+                    <button class="btn-remover" type="button" title="Remover item">✕</button>
+                </div>
+
+                <div class="item-produto">
+                    <img src="../imagens/ohmimetro.png" alt="Ohmímetro tipo 1">
+                    <div class="item-info">
+                        <h3>Ohmímetro tipo 1</h3>
+                        <p class="item-preco-unitario">R$ <span>100,00</span> / un</p>
+                    </div>
+                    <div class="item-quantidade">
+                        <button class="btn-qtd" type="button">-</button>
+                        <input type="text" value="3" readonly>
+                        <button class="btn-qtd" type="button">+</button>
+                    </div>
+                    <div class="item-subtotal">R$ 300,00</div>
+                    <button class="btn-remover" type="button" title="Remover item">✕</button>
+                </div>
+
+            </div>
+
+            <!-- RESUMO DO PEDIDO -->
+            <aside id="resumo-pedido">
+
+                <div class="caixa-resumo">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" name="cep" placeholder="Digite o Cep">
+                </div>
+
+                <div class="caixa-resumo">
+                    <label>Valor Total</label>
+                    <div class="valor">
+                        <span>R$</span>
+                        <span>650,00</span>
+                    </div>
+                </div>
+
+                <div class="caixa-resumo">
+                    <label>Valor Frete</label>
+                    <div class="valor">
+                        <span>R$</span>
+                        <span>25,00</span>
+                    </div>
+                </div>
+
+                <div class="caixa-resumo total">
+                    <label>Total a Pagar</label>
+                    <div class="valor">
+                        <span>R$</span>
+                        <span>675,00</span>
+                    </div>
+                </div>
+
+                <button class="btn-resumo btn-continuar" type="button">Continuar Compra</button>
+                <button class="btn-resumo btn-finalizar" type="button">Finalizar Compra</button>
+
+            </aside>
+
+        </section>
+
+
+        <footer id="rodape">
+            <h2>&copy; 2026 EletroLouco - Ecommerce Todos os direitos reservados</h2>
+            <p>Formas de pagamento: Pix, Cartões de Crédito e Débito</p>
+        </footer>
+
+    </main>
+</body>
+</html>
