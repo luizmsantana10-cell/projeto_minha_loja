@@ -1,1 +1,111 @@
-@import url(style_estrutura_pagina.css)
+@import url("style_estrutura_pagina.css");
+
+#cadastro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+#form{
+    width: 700px;
+    padding: 40px;
+    border: 4px solid var(--cor02);
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(255,212,0,.3);
+}
+
+#form h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--cor03);
+    font-size: 2em;
+}
+
+#form label{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#form input[type="text"],
+#form input[type="email"],
+#form input[type="date"],
+#form input[type="password"],
+#form select{
+    width: 100%;
+    height: 45px;
+    border: 2px solid var(--cor02);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--branca);
+    color: var(--cor01);
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+#form input::placeholder{
+    color: gray;
+}
+
+#form select{
+    cursor: pointer;
+}
+
+#form input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+    margin-top: 20px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+#form input[type="checkbox"] + label{
+    display: inline;
+    font-weight: normal;
+}
+
+#form button{
+    width: 180px;
+    height: 45px;
+    margin: 30px 10px 0 0;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--cor02);
+    color: var(--cor01);
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#form button:hover{
+    background-color: var(--cor03);
+    transform: scale(1.05);
+}
+
+#form button[type="reset"]{
+    background-color: var(--cor04);
+    color: var(--branca);
+}
+
+#form button[type="reset"]:hover{
+    background-color: #b71c1c;
+}
+
+@media(max-width:768px){
+
+    #form{
+        width: 95%;
+        padding: 20px;
+    }
+
+    #form button{
+        width: 100%;
+        margin-top: 15px;
+    }
+}
